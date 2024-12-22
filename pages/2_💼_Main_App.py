@@ -73,6 +73,24 @@ def main():
     
     # Quick Email Copy Button at Top
     st.header("🚀 Quick Actions")
+    
+    # Email Usage Guidelines
+    st.markdown("""
+    ### 📧 Email Usage Guidelines
+    
+    > **Privacy Notice:**
+    > - Always use BCC when sending mass emails to protect member privacy
+    > - This prevents recipients from seeing other members' email addresses
+    > - Helps avoid unauthorized email collection
+    
+    > **Email Signature Requirement:**
+    > - All official communications must include the GDG signature
+    > - This maintains professionalism and brand consistency
+    > - Helps recipients identify official GDG communications
+    """)
+    
+    st.divider()
+    
     quick_cols = st.columns([2, 2, 6])
     with quick_cols[0]:
         if st.button("📋 Copy All Emails", use_container_width=True):
